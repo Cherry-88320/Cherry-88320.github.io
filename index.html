@@ -369,32 +369,32 @@
             </div>
         </section>
 
-        <!-- CONTACT BOX -->
-        <!-- CONTACT BOX -->
+      <!-- CONTACT BOX -->
         <div class="contact-box">
             <h3>Let's collaborate on something great!</h3>
             <p>I am eager to deploy my asset production, design, and administrative skill sets within your team structure.</p>
             <div style="margin-top: 1.5rem;">
-                <!-- Displays your email clearly as text -->
-                <p style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem; opacity: 1; letter-spacing: 0.5px;">bella85346@gmail.com</p>
-                <!-- Interactive Copy Button -->
+                <p style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem; opacity: 1; letter-spacing: 0.5px;">bella885346@gmail.com</p>
                 <button onclick="copyEmail()" id="copyBtn" class="email-btn" style="border: none; cursor: pointer; font-family: inherit;">
                     📋 Copy Email Address
                 </button>
             </div>
         </div>
-<script>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; 2026 Bella. Professional Portfolio.</p>
+        </footer>
+    </div>
+
+    <script>
         function copyEmail() {
-            // Copies your email address to the clipboard
             navigator.clipboard.writeText('bella885346@gmail.com');
             
-            // Provides instant visual feedback
             const btn = document.getElementById('copyBtn');
             btn.innerHTML = '✅ Copied to Clipboard!';
-            btn.style.background = '#2563eb'; // Turns blue temporarily on success
+            btn.style.background = '#2563eb';
             btn.style.color = 'white';
-            
-            // Resets the button back to original after 3 seconds
             setTimeout(() => {
                 btn.innerHTML = '📋 Copy Email Address';
                 btn.style.background = 'white';
