@@ -284,25 +284,42 @@
         <!-- HERO HEADER -->
         <header>
             <div class="profile-badge">✨ Open to Opportunities</div>
-            <h1>Hi, I'm Bella</h1>
+            <h1>Hi, I'm Bella!</h1>
             <p>A creative specialist focusing on high-impact visuals, multimedia production, and efficient data workflows. Bringing a unique blend of vibrant style and structured performance.</p>
-            
-            <div class="social-links">
-                <a href="mailto:bella85346@gmail.com">📫 Email Me</a>
-                <a href="https://github.com/Cherry-88320" target="_blank">🛠️ GitHub</a>
-            </div>
         </header>
 
         <!-- SKILLS SECTION -->
         <section id="skills">
-            <h2>My Skills & Toolset</h2>
-            <div class="skills-grid" style="margin-top: 1.5rem;">
-                <div class="skill-tag">🎨 Canva & Brand Design</div>
-                <div class="skill-tag">📊 Google Workspace (Sheets, Docs, Slides)</div>
-                <div class="skill-tag">⚙️ Micro Work & Data Processing</div>
-                <div class="skill-tag">🎬 Video Editing & Assembly</div>
-                <div class="skill-tag">📝 Content & Script Writing</div>
-                <div class="skill-tag">🚀 Project Organization</div>
+            <!-- SKILLS SECTION -->
+        <section id="skills">
+            <h2>Skills & Expertise</h2>
+            <p class="section-desc">A balance of technical proficiency and core interpersonal strengths.</p>
+            
+            <div style="margin-top: 2rem;">
+                <!-- Category 1: Technical Skills -->
+                <h3 style="font-size: 1.15rem; color: var(--primary-purple); margin-bottom: 0.8rem; font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+                    🖥️ Technical Skills
+                </h3>
+                <div class="skills-grid" style="margin-bottom: 2.5rem;">
+                    <div class="skill-tag">📊 Microsoft Office</div>
+                    <div class="skill-tag">🎨 Canva</div>
+                    <div class="skill-tag">💻 Google Workspace</div>
+                </div>
+
+                <!-- Category 2: Soft Skills -->
+                <h3 style="font-size: 1.15rem; color: var(--primary-pink); margin-bottom: 0.8rem; font-weight: 600; display: flex; align-items: center; gap: 0.5rem;">
+                    🤝 Soft Skills
+                </h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">📅 Event Coordination</div>
+                    <div class="skill-tag">🗣️ Stakeholder Communication</div>
+                    <div class="skill-tag">👥 Cross-functional Collaboration</div>
+                    <div class="skill-tag">⏱️ Time Management</div>
+                    <div class="skill-tag">🔀 Multitasking</div>
+                    <div class="skill-tag">🧠 Quick Learner</div>
+                    <div class="skill-tag">💡 Problem Solving</div>
+                    <div class="skill-tag">🔍 Attention to Detail</div>
+                </div>
             </div>
         </section>
 
@@ -353,17 +370,37 @@
         </section>
 
         <!-- CONTACT BOX -->
+        <!-- CONTACT BOX -->
         <div class="contact-box">
             <h3>Let's collaborate on something great!</h3>
             <p>I am eager to deploy my asset production, design, and administrative skill sets within your team structure.</p>
-            <a href="mailto:bella85346@gmail.com" class="email-btn">📫 Contact Me Directly</a>
+            <div style="margin-top: 1.5rem;">
+                <!-- Displays your email clearly as text -->
+                <p style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem; opacity: 1; letter-spacing: 0.5px;">bella85346@gmail.com</p>
+                <!-- Interactive Copy Button -->
+                <button onclick="copyEmail()" id="copyBtn" class="email-btn" style="border: none; cursor: pointer; font-family: inherit;">
+                    📋 Copy Email Address
+                </button>
+            </div>
         </div>
-
-        <!-- FOOTER -->
-        <footer>
-            <p>&copy; 2026 Bella. Professional Portfolio.</p>
-        </footer>
-    </div>
-
+<script>
+        function copyEmail() {
+            // Copies your email address to the clipboard
+            navigator.clipboard.writeText('bella85346@gmail.com');
+            
+            // Provides instant visual feedback
+            const btn = document.getElementById('copyBtn');
+            btn.innerHTML = '✅ Copied to Clipboard!';
+            btn.style.background = '#2563eb'; // Turns blue temporarily on success
+            btn.style.color = 'white';
+            
+            // Resets the button back to original after 3 seconds
+            setTimeout(() => {
+                btn.innerHTML = '📋 Copy Email Address';
+                btn.style.background = 'white';
+                btn.style.color = 'var(--primary-purple)';
+            }, 3000);
+        }
+    </script>
 </body>
 </html>
